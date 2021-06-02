@@ -12,7 +12,7 @@ The Algorithm section is mandatory for all applicants.
 
 You need to complete at LEAST one of Android or HTML sections. You may attempt both sections and submit both, you will **not** be penalized if one language is weaker than the other. We are using it to gauge how we should spread the projects amongst the interns. If you are uncertain which section to complete, we recommend you to attempt both.
 
-Commit your work to each section in a separate sub folder to your cloned repo, then email the link of your repo to careers@gameofapps.org. 
+Commit your work to each section in a separate sub folder to your cloned repo, the submit your Git repo link (make sure its public!) to this [Google Form](https://forms.gle/W6NRZYwk936nEmvY6)
 
 We expect each section to take around 1 hour to complete. Therefore should you complete all three sections, it may take around 3-4 hours. You may be faster or slower depending on your skillset. 
 
