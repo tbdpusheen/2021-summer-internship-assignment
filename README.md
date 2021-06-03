@@ -128,12 +128,22 @@ Your second challenge is to develop a small app from scratch. Here are the requi
 Convert the following figma design to a functioning webpage: [Figma](https://www.figma.com/file/cjFsTTzlsFnjW90fkbxloW/GOA-Front-End-Test-Mocks)
 
 Files are located in a zip file in the git repo
-
-### Requirements
 * You can use any front end framework you choose, but we have a slight preference towards React, Angular, or Vanilla HTML/JS/CSS. However, use whatever framework you are comfortable with.
 * Make it responsive using your best judgement.
-* Create a simple translucent overlay for photos - use only vanilla JavaScript or what is built into the framework, do not import jQuery or any other external libraries for it.
 * If you are using a framework, make sure you compile it down to static files and include that alongside your code with the submission.
+
+### Requirements
+* Create a webpage. The page contains:
+* * Header with the text `Hello World`
+* * Sub-header with the text `Wow! Check out all the cool CSS and Javascript things I can do!`
+* Create 4 image blocks with the following crops/masks:
+* * Image in a circle
+* * Image in a 4:3 rectangle
+* * Image in a 1:1 square
+* * Image in a triangle
+* The image blocks should be clickable
+* * When the user clicks on an image block, it should open in a translucent overlay (use only vanilla JavaScript or what is built into the framework, do not import jQuery or any other external libraries for it.)
+* Background should have a blue to light blue gradient
 
 Optional Extras: 
 * Create some hover effect for the image thumbnails.
