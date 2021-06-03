@@ -13,10 +13,8 @@ class Main {
 
         for (int num1 : testArray) {
             for (Integer num2 : numbersArray) {
-                String pair = "(" + num1 + ", " + num2 + ")";
-                if (num1 + num2 == targetSum 
-                    && !pairsArray.contains(pair) 
-                    && !pairsArray.contains("(" + num2 + ", " + num1 + ")")) {
+                String pair = "(" + Math.min(num1, num2) + ", " + Math.max(num1, num2) + ")";
+                if (num1 + num2 == targetSum && !pairsArray.contains(pair)) {
                     pairsArray.add(pair);
                     System.out.println(pair);
                 }
