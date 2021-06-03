@@ -23,6 +23,10 @@ Your first challenge is to solve two algorithm questions. You'll be judged based
 
 Please complete this section in Java.
 
+**About run time analysis:** We won't do a strict run time assessment but it will have some factor in it if it is wildly inefficient (eg: you have nested loops when it was not necessary, etc).  
+
+It's also a trade off between super optimized code and readability, so take that into consideration as well. You should optimize to some degree but if it becomes very hard to comprehend then that is probably too far
+
 Before each code block, please outline your approach/algorithm to solving the problem.
 ---
 ### Example of how each algorithm should be submitted: 
@@ -64,7 +68,7 @@ static int GetNth(Node head, int n)
 
 Create a function that accepts an array of integers and a target sum. The function will print all pairs of integers in the array whose sum is equal to the target sum. 
 
-Feel free to expand the test cases and think of any edge cases.
+Feel free to expand the test cases and think of any edge cases. Your answer should be able to handle duplicate numbers in the input, but we only expect unique pairs to be in the output. We do not have any specific requirements about sorting the output  (small integer, larger integer or vice versa). Be ready to justify your decision, should we choose to ask.
 
 Here's an example:
 
