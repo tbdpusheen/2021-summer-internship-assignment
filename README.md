@@ -134,15 +134,15 @@ Files are located in a zip file in the git repo
 
 ### Requirements
 * Create a webpage. The page contains:
-* * Header with the text `Hello World`
-* * Sub-header with the text `Wow! Check out all the cool CSS and Javascript things I can do!`
+** Header with the text `Hello World`
+** Sub-header with the text `Wow! Check out all the cool CSS and Javascript things I can do!`
 * Create 4 image blocks with the following crops/masks:
-* * Image in a circle
-* * Image in a 4:3 rectangle
-* * Image in a 1:1 square
-* * Image in a triangle
+** Image in a circle
+** Image in a 4:3 rectangle
+** Image in a 1:1 square
+** Image in a triangle
 * The image blocks should be clickable
-* * When the user clicks on an image block, it should open in a translucent overlay (use only vanilla JavaScript or what is built into the framework, do not import jQuery or any other external libraries for it.)
+** When the user clicks on an image block, it should open in a translucent overlay (use only vanilla JavaScript or what is built into the framework, do not import jQuery or any other external libraries for it.)
 * Background should have a blue to light blue gradient
 
 Optional Extras: 
