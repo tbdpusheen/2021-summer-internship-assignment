@@ -15,21 +15,20 @@ class Main {
 
         int currentIndex = 0;
         for (int num1 : sortedArray) {
-            // Goes through the array looking for pairs. If the current number is higher than the target,
+            // If the current number is higher than the target,
             // break, as the array is sorted and all subsequent numbers will also be higher
-            if (num1 <= targetSum) {
-                // Looks for all number higher than the current one, as all previous numbers will have
-                // been tried and paired
-                for (int loopingIndex = ++currentIndex; loopingIndex < sortedArray.length; loopingIndex++) {
-                    // Creates a pair which always starts with the smaller number, as the array is sorted
-                    String pair = "(" + num1 + ", " + sortedArray[loopingIndex] + ")";
-                    if (num1 + sortedArray[loopingIndex] == targetSum && !pairsArray.contains(pair)) {
-                        pairsArray.add(pair);
-                        System.out.println(pair);
-                    }
-                }
-            } else {
+            if (num1 > targetSum) {
                 break;
+            }
+            // Goes through the array looking for pairs. Looks for all number higher than the 
+            // current one, as all previous numbers will have been tried and paired
+            for (int loopingIndex = ++currentIndex; loopingIndex < sortedArray.length; loopingIndex++) {
+                // Creates a pair which always starts with the smaller number, as the array is sorted
+                String pair = "(" + num1 + ", " + sortedArray[loopingIndex] + ")";
+                if (num1 + sortedArray[loopingIndex] == targetSum && !pairsArray.contains(pair)) {
+                    pairsArray.add(pair);
+                    System.out.println(pair);
+                }
             }
         }
     }
