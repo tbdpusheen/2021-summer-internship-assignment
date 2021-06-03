@@ -125,7 +125,7 @@ Your second challenge is to develop a small app from scratch. Here are the requi
 
 ## Challenge 3: HTML (Must complete at least challenge 2 or 3)
 
-Convert the following figma design to a functioning webpage: [Figma](https://www.figma.com/file/cjFsTTzlsFnjW90fkbxloW/GOA-Front-End-Test-Mocks)
+Convert the following figma design to a functioning webpage: [Figma](https://www.figma.com/file/cjFsTTzlsFnjW90fkbxloW/GOA-Front-End-Test-Mocks). There is a playable prototype if you click on the "Play" button on the top right corner, if you can go to [this link](https://www.figma.com/proto/cjFsTTzlsFnjW90fkbxloW/GOA-Front-End-Test-Mocks?node-id=111%3A98&scaling=min-zoom&page-id=111%3A8)
 
 Files are located in a zip file in the git repo
 * You can use any front end framework you choose, but we have a slight preference towards React, Angular, or Vanilla HTML/JS/CSS. However, use whatever framework you are comfortable with.
