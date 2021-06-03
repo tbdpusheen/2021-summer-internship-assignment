@@ -132,7 +132,7 @@ Files are located in a zip file in the git repo
 ### Requirements
 * You can use any front end framework you choose, but we have a slight preference towards React, Angular, or Vanilla HTML/JS/CSS. However, use whatever framework you are comfortable with.
 * Make it responsive using your best judgement.
-* Create a simple transparent overlay for photos - use only vanilla JavaScript or what is built into the framework, do not import jQuery or any other external libraries for it.
+* Create a simple translucent overlay for photos - use only vanilla JavaScript or what is built into the framework, do not import jQuery or any other external libraries for it.
 * If you are using a framework, make sure you compile it down to static files and include that alongside your code with the submission.
 
 Optional Extras: 
