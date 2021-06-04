@@ -2,7 +2,7 @@ import java.util.*;
 
 class Main {
     public static void main(String[] args) {
-        int[] testArray = {};
+        int[] testArray = {2};
         int testSum = 0;
         findPairs(testArray, testSum);
 
@@ -27,7 +27,7 @@ class Main {
         for (int num1 : sortedArray) {
             // If the current number is higher than the target,
             // break, as the array is sorted and all subsequent numbers will also be higher
-            if (num1 > targetSum || testArray.length == 1) {
+            if (num1 > targetSum) {
                 break;
             }
 
