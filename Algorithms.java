@@ -2,9 +2,13 @@ import java.util.*;
 
 class Main {
     public static void main(String[] args) {
-        int[] testArray = {1,5,6,2,3,72,2,5,3,1,123,12,11,10};
-        int testSum = 13;
+        int[] testArray = {};
+        int testSum = 0;
         findPairs(testArray, testSum);
+
+        int[] testA = {};
+        int[] testB = {};
+        reconcileHelper(testA, testB);
     }
 
     /** Question 1: Create a function that accepts an array of integers and a target sum. 
@@ -18,12 +22,12 @@ class Main {
         int[] sortedArray = testArray;
         Arrays.sort(sortedArray);
         ArrayList<String> pairsArray = new ArrayList<>();
-
         int currentIndex = 0;
+
         for (int num1 : sortedArray) {
             // If the current number is higher than the target,
             // break, as the array is sorted and all subsequent numbers will also be higher
-            if (num1 > targetSum) {
+            if (num1 > targetSum || testArray.length == 1) {
                 break;
             }
 
@@ -38,6 +42,10 @@ class Main {
                 }
             }
         }
+
+        if (pairsArray.isEmpty()) {
+            System.out.println("No pairs found");
+        }
     }
 
     /** Question 2: Given two unsorted integer arrays, 
@@ -46,44 +54,44 @@ class Main {
      * @param a First unsorted array
      * @param b Second unsorted array 
      */ 
-    void reconcileHelper(int[] a, int[] b) {
-        int[] sortedA = a;
-        Arrays.sort(sortedA);
-        int[] sortedB = b;
-        Arrays.sort(sortedB);
+    private static void reconcileHelper(int[] a, int[] b) {
+        // Adds all of array "a" to an ArrayList with no duplicates
         ArrayList<Integer> uniqueA = new ArrayList<>();
-        ArrayList<Integer> uniqueB = new ArrayList<>();
+        for (int number : a) {
+            if (!uniqueA.contains(number)) {
+                uniqueA.add(number);
+            }
+        }
 
-        // 1,1,2,5,6,7,12
-        // 1,4,5,5,6,13
-        int index = 0;
-        for (int number : sortedA) {
-            if (number == sortedB[index]) {
-                while (number == sortedB[index]) {
-                    index++;
+        ArrayList<Integer> cleanedB = new ArrayList<>(); // No duplicates
+        ArrayList<Integer> uniqueB = new ArrayList<>();
+        for (int number : b) {
+            if (!cleanedB.contains(number)) {
+                cleanedB.add(number);
+                // Checks to see if the number is unique to array "b"
+                if (uniqueA.contains(number)) {
+                    // If it is not, remove that number from array "a" as that number is no longer unique
+                    uniqueA.remove((Integer) number);
+                } else { // Else, the number is unique
+                    uniqueB.add(number);
                 }
-            } 
-            // if (!uniqueA.contains(number) && number < sortedB[index]) {
-            //     uniqueA.add(number);
-            // } else {
-            //     while (number > sortedB[index]) {
-            //         if (!uniqueA.contains(sortedB[index])) {
-            //             uniqueB.add(sortedB[index]);
-            //         }
-            //         index++;
-            //     }
-            // }
+            }
         }
 
         String string = "";
+        Collections.sort(uniqueA);
         for (Integer number : uniqueA) {
             string += number + " ";
         }
-        System.out.println("Numbers in array a that aren't in array b:\n" + string);
+        System.out.println("Numbers in array a that aren't in array b:\n" 
+            + (string != "" ? string : "None"));
+
         string = "";
+        Collections.sort(uniqueB);
         for (Integer number : uniqueB) {
             string += number + " ";
         }
-        System.out.println("Numbers in array b that aren't in array a:\n" + string);
+        System.out.println("Numbers in array b that aren't in array a:\n" 
+            + (string != "" ? string : "None"));
     }
 }
