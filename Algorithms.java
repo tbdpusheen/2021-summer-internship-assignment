@@ -11,8 +11,25 @@ class Main {
         reconcileHelper(testA, testB);
     }
 
-    /** Question 1: Create a function that accepts an array of integers and a target sum. 
-     * The function will print all pairs of integers in the array whose sum is equal to the target sum.  
+    /** 
+     * Question 1: Create a function that accepts an array of integers and a target sum. 
+     * The function will print all pairs of integers in the array whose sum is equal to the target sum. 
+     * 
+     * <p> Algorithm:
+     * <ul> 
+     *      <li> Sort the input array 
+     *      <li> Initial index = 0
+     *      <li> Loop through the sorted array
+     *      <ul>
+     *          <li> If the current number is higher than the target, break
+     *          <li> Loop through all numbers after the current number
+     *          <ul>
+     *              <li> If any of the numbers combine with the current number to match the target
+     *                      and if the pair doesn't already exist, print the pair
+     *          </ul>
+     *      </ul>
+     *      <li> Print a message if no pairs are found
+     * </ul><p>
      * 
      * @param targetSum The target to find pairs that match
      * @param testArray The array of int to search for pairs which match the targetSum
@@ -48,15 +65,35 @@ class Main {
         }
     }
 
-    /** Question 2: Given two unsorted integer arrays, 
+    /** 
+     * Question 2: Given two unsorted integer arrays, 
      * print out the numbers that are NOT contained in the other array
+     * 
+     * <p> Algorithm:
+     * <ul> 
+     *      <li> Loop through array "a"
+     *      <ul>
+     *          <li> Add all non-duplicates to a new ArrayList that contains no duplicates
+     *      </ul>
+     *      <li> Loop through array "b"
+     *      <ul> 
+     *          <li> If the number is not a duplicate, add it to a new ArrayList 
+     *                  that contains no duplicates
+     *          <ul>
+     *              <li> If the array "a" also contains the number, remove it 
+     *                      as a unique number from array "a"
+     *              <li> Otherwise, add it as a unique number for array "b"
+     *          </ul>
+     *      </ul>
+     *      <li> Print the resulting unique numbers for each array
+     * </ul><p>
      * 
      * @param a First unsorted array
      * @param b Second unsorted array 
      */ 
     private static void reconcileHelper(int[] a, int[] b) {
         // Adds all of array "a" to an ArrayList with no duplicates
-        ArrayList<Integer> uniqueA = new ArrayList<>();
+        ArrayList<Integer> uniqueA = new ArrayList<>(); // Unique numbers for array "a"
         for (int number : a) {
             if (!uniqueA.contains(number)) {
                 uniqueA.add(number);
@@ -64,7 +101,7 @@ class Main {
         }
 
         ArrayList<Integer> cleanedB = new ArrayList<>(); // No duplicates
-        ArrayList<Integer> uniqueB = new ArrayList<>();
+        ArrayList<Integer> uniqueB = new ArrayList<>(); // Unique numbers for array "b"
         for (int number : b) {
             if (!cleanedB.contains(number)) {
                 cleanedB.add(number);
