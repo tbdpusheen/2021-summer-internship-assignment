@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Imidge</string>
-    <string name="images_string">Images</string>
+    <string name="app_name">Segami</string>
+    <string name="gallery_string">Gallery</string>
 </resources>

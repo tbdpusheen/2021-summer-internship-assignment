@@ -12,6 +12,6 @@
         android:layout_height="match_parent"
         android:layout_margin="10dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/daisy"
+        app:srcCompat="@drawable/flower_1"
         tools:ignore="ContentDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>
