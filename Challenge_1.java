@@ -2,7 +2,7 @@ import java.util.*;
 
 class Main {
     public static void main(String[] args) {
-        int[] testArray = {2};
+        int[] testArray = {};
         int testSum = 0;
         findPairs(testArray, testSum);
 
@@ -121,7 +121,7 @@ class Main {
             string += number + " ";
         }
         System.out.println("Numbers in array a that aren't in array b:\n" 
-            + (string != "" ? string : "None"));
+            + (!string.equals("") ? string : "None"));
 
         string = "";
         Collections.sort(uniqueB);
@@ -129,6 +129,6 @@ class Main {
             string += number + " ";
         }
         System.out.println("Numbers in array b that aren't in array a:\n" 
-            + (string != "" ? string : "None"));
+            + (!string.equals("") ? string : "None"));
     }
 }
