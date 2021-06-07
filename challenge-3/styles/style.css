@@ -1,34 +1,45 @@
 html {
   background: linear-gradient(#3856BF, #E57E67) no-repeat center center;
   background-size: cover;
-  height: fit-content;
+  height: 100%;
 }
 
 @media screen and (min-width: 1001px){
   h1 {
     font-size: 60px;
+    margin-top: 68px;
   }
 
   h2 {
     font-size: 20px;
+    margin-top: 19px;
   }
 
-  .top-left {
+  #top-images {    
+    margin-top: 75px;
+    width: 725px;
+  }
+
+  #bottom-container {
+    width: 725px;
+  }
+
+  #top-left {
     padding-bottom: 255px;
     width: 255px; 
   }
 
-  .top-right {
+  #top-right {
     padding-bottom: 218px;
     width: 218px; 
   }
 
-  .bottom-left {
+  #bottom-left {
     padding-bottom: 292px;
     width: 219px; 
   }
 
-  .bottom-right {
+  #bottom-right {
     padding-bottom: 360px;
     width: 360px; 
   }
@@ -37,28 +48,39 @@ html {
 @media screen and (max-width: 1000px){
   h1 {
     font-size: 6vw;
+    margin-top: 7%;
   }
 
   h2 {
     font-size: 2vw;
+    margin-top: 2%;
   }
 
-  .top-left {
+  #top-images {
+    margin-top: 8%;
+    width: 75%;
+  }
+
+  #bottom-container {
+    width: 75%;
+  }
+
+  #top-left {
     padding-bottom: 35%;
     width: 35%;
   }
 
-  .top-right {
+  #top-right {
     padding-bottom: 30%;
     width: 30%;
   }
 
-  .bottom-left {
+  #bottom-left {
     padding-bottom: 40%;
     width: 30%;
   }
 
-  .bottom-right {
+  #bottom-right {
     padding-bottom: 50%;
     width: 50%;
   }
@@ -68,7 +90,6 @@ h1 {
   color: white;
   font-family: 'Open Sans', 'Roboto', sans-serif;
   font-weight: 800;
-  margin-top: 7%;
   margin-bottom: auto;
   text-align: center;
 }
@@ -77,11 +98,10 @@ h2 {
   color: white;
   font-family: 'Open Sans', 'Roboto', sans-serif;
   font-weight: 400;
-  margin-top: 2%;
   text-align: center;
 }
 
-.top-images {
+#top-images {
   align-items: center;
   display: flex;
   height: auto;
@@ -89,16 +109,14 @@ h2 {
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8%;
-  width: 75%;
 }
 
-.top-left {
+#top-left {
   height: 0;
   position: relative;
 }
 
-.top-left-image {
+#top-left-image {
   background-image: url(../images/surface-ZlJmOUFRBfQ-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -111,12 +129,12 @@ h2 {
   width: 100%;
 }
 
-.top-right {
+#top-right {
   height: 0;
   position: relative;
 }
 
-.top-right-image {
+#top-right-image {
   background-image: url(../images/sergey-pesterev-llGiAyYthDw-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -128,23 +146,28 @@ h2 {
   width: 100%;
 }
 
-.bottom-images {
-  align-items: center;
-  display: flex;
-  height: auto;
-  justify-content: space-around;
-  margin-bottom: auto;
-  margin-left: 16%;
+#bottom-container {
+  margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  margin-bottom: auto;
+  height: auto;
 }
 
-.bottom-left {
+#bottom-images {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-left: 7%;
+  justify-content: space-around;
+}
+
+#bottom-left {
   height: 0;
   position: relative;
 }
 
-.bottom-left-image {
+#bottom-left-image {
   background-image: url(../images/lee-chinyama-6lGiNbAublo-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -156,7 +179,7 @@ h2 {
   width: 100%;
 }
 
-.bottom-right {
+#bottom-right {
   background-color: white;
   clip-path: polygon(50% 35%, 10% 100%, 90% 100%);
   height: 0;
@@ -165,7 +188,7 @@ h2 {
   position: relative;
 }
 
-.bottom-right-triangle {
+#bottom-right-triangle {
   clip-path: polygon(50% 35%, 10% 100%, 90% 99.5%);
   margin-bottom: auto;
   margin-left: auto;
@@ -176,7 +199,7 @@ h2 {
   width: 90%;
 }
 
-.bottom-right-image {
+#bottom-right-image {
   background-image: url(../images/simone-hutsch-8LwKILB2ceI-unsplash.jpg);
   background-position: center;
   background-size: cover;

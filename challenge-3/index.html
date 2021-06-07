@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Challenge 3</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge 3</title>
     <link href="styles/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet"> 
@@ -11,23 +11,26 @@
   <body>
     <h1>Hello World</h1>
     <h2>Wow! Check out all the cool CSS and Javascript things I can do!</h2>
-    <div class="top-images">
-      <div class="top-left">
-        <div class="top-left-image"></div>
+    <div id="top-images">
+      <div id="top-left">
+        <div id="top-left-image" class="image"></div>
       </div>
-      <div class="top-right">
-        <div class="top-right-image"></div>
+      <div id="top-right">
+        <div id="top-right-image" class="image"></div>
       </div>
     </div>
-    <div class="bottom-images">
-      <div class="bottom-left">
-        <div class="bottom-left-image"></div>
-      </div>
-      <div class="bottom-right">
-        <div class="bottom-right-triangle">
-          <div class="bottom-right-image"></div>
+    <div id="bottom-container">
+      <div id="bottom-images">
+        <div id="bottom-left">
+          <div id="bottom-left-image" class="image"></div>
+        </div>
+        <div id="bottom-right" class="image">
+          <div id="bottom-right-triangle">
+            <div id="bottom-right-image"></div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
