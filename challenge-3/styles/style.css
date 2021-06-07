@@ -4,6 +4,8 @@ html {
   height: fit-content;
 }
 
+/* Responsive Design */
+
 @media screen and (min-width: 1001px){
   h1 {
     font-size: 60px;
@@ -20,7 +22,7 @@ html {
     font-size: 30px;
   }
 
-  #top-images {    
+  #top-images {
     margin-top: 75px;
     width: 725px;
   }
@@ -31,22 +33,22 @@ html {
 
   #top-left {
     padding-bottom: 255px;
-    width: 255px; 
+    width: 255px;
   }
 
   #top-right {
     padding-bottom: 218px;
-    width: 218px; 
+    width: 218px;
   }
 
   #bottom-left {
     padding-bottom: 292px;
-    width: 219px; 
+    width: 219px;
   }
 
   #bottom-right {
     padding-bottom: 360px;
-    width: 360px; 
+    width: 360px;
   }
 }
 
@@ -96,6 +98,8 @@ html {
   }
 }
 
+/* Heading */
+
 h1 {
   color: white;
   font-family: 'Open Sans', 'Roboto', sans-serif;
@@ -110,6 +114,8 @@ h2 {
   font-weight: 400;
   text-align: center;
 }
+
+/* Overlay */
 
 #overlay {
   background-color: rgba(0, 0, 0, .5);
@@ -152,6 +158,8 @@ h2 {
   margin-top: 2%;
   width: 70%;
 }
+
+/* Top Images */
 
 #top-images {
   align-items: center;
@@ -198,6 +206,8 @@ h2 {
   width: 100%;
 }
 
+/* Bottom Images */
+
 #bottom-container {
   margin-left: auto;
   margin-right: auto;
@@ -209,9 +219,9 @@ h2 {
   align-items: center;
   display: flex;
   height: 100%;
-  width: 100%;
-  margin-left: 7%;
   justify-content: space-around;
+  margin-left: 7%;
+  width: 100%;
 }
 
 #bottom-left {

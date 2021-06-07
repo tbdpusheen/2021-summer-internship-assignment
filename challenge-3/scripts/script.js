@@ -1,10 +1,12 @@
+// Searches for all elements with the 'image' class
 const images = document.querySelectorAll('.image');
-images.forEach(image => {
-  image.addEventListener('click', function(){openOverlay(image)})
+images.forEach(image => { // Adds a click event listener to every element, which opens the overlay
+  image.addEventListener('click', function(){openOverlay(image.id)})
 });
 
-function openOverlay(image) {
-  switch(image.id) {
+// Opens the overlay page depending on which image was clicked
+function openOverlay(imageId) {
+  switch(imageId) {
     case 'top-left-image':
       document.location.href = 'html/top-left-image.html';
       break;
