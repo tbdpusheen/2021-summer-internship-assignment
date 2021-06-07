@@ -1,7 +1,7 @@
 html {
   background: linear-gradient(#3856BF, #E57E67) no-repeat center center;
   background-size: cover;
-  height: 100%;
+  height: fit-content;
 }
 
 @media screen and (min-width: 1001px){
@@ -13,6 +13,11 @@ html {
   h2 {
     font-size: 20px;
     margin-top: 19px;
+  }
+
+  #overlay-text {
+    margin-top: 34px;
+    font-size: 30px;
   }
 
   #top-images {    
@@ -54,6 +59,11 @@ html {
   h2 {
     font-size: 2vw;
     margin-top: 2%;
+  }
+
+  #overlay-text {
+    margin-top: 5%;
+    font-size: 3vw;
   }
 
   #top-images {
@@ -99,6 +109,48 @@ h2 {
   font-family: 'Open Sans', 'Roboto', sans-serif;
   font-weight: 400;
   text-align: center;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, .5);
+  bottom: 0;
+  display: flex;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#modal-window {
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 1%;
+  height: 55%;
+  margin: auto;
+  max-height: 450px;
+  max-width: 690px;
+  min-height: 350px;
+  min-width: 400px;
+  width: 70%;
+}
+
+#overlay-text {
+  color: black;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+#mountain-dew {
+  background-image: url(../images/sergey-pesterev-llGiAyYthDw-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70%;
+  margin: auto;
+  margin-top: 2%;
+  width: 70%;
 }
 
 #top-images {
