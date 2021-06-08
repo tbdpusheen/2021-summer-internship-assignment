@@ -143,10 +143,10 @@ h2 {
 }
 
 #close {
+  cursor: pointer;
   float: right;
   margin-right: 1%;
   margin-top: 1%;
-  cursor: pointer;
 }
 
 #overlay-text {
@@ -157,47 +157,37 @@ h2 {
   text-align: center;
 }
 
-#mountain-dew {
-  background-image: url(../images/sergey-pesterev-llGiAyYthDw-unsplash.jpg);
+#mountain-dew,
+#crazy-rich-asians,
+#crippling-depression,
+#i-hate-this-picture {
   background-position: center;
   background-size: cover;
   height: 70%;
-  margin: auto;
-  margin-top: 3%;
+  margin: 3% auto auto auto;
+}
+
+#mountain-dew {
+  background-image: url(../images/sergey-pesterev-llGiAyYthDw-unsplash.jpg);
   width: 70%;
 }
 
 #crazy-rich-asians {
   background-image: url(../images/surface-ZlJmOUFRBfQ-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 70%;
-  margin: auto;
-  margin-top: 3%;
   width: 30%;
 }
 
 #crippling-depression {
   background-image: url(../images/lee-chinyama-6lGiNbAublo-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 70%;
-  margin: auto;
-  margin-top: 4%;
   width: 30%;
 }
 
 #i-hate-this-picture {
   background-image: url(../images/simone-hutsch-8LwKILB2ceI-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 70%;
-  margin: auto;
-  margin-top: 4%;
   width: 30%;
 }
 
-/* Top Images */
+/* Images */
 
 #top-images {
   align-items: center;
@@ -208,43 +198,6 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-
-#top-left {
-  height: 0;
-  position: relative;
-}
-
-#top-left-image {
-  background-image: url(../images/surface-ZlJmOUFRBfQ-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 100%;
-  border: solid white 5px;
-  height: 100%;
-  margin: auto;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-
-#top-right {
-  height: 0;
-  position: relative;
-}
-
-#top-right-image {
-  background-image: url(../images/sergey-pesterev-llGiAyYthDw-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
-  border: solid white 5px;
-  height: 100%;
-  margin: auto;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-
-/* Bottom Images */
 
 #bottom-container {
   margin-left: auto;
@@ -262,13 +215,16 @@ h2 {
   width: 100%;
 }
 
+#top-left,
+#top-right,
 #bottom-left {
   height: 0;
   position: relative;
 }
 
+#top-left-image,
+#top-right-image,
 #bottom-left-image {
-  background-image: url(../images/lee-chinyama-6lGiNbAublo-unsplash.jpg);
   background-position: center;
   background-size: cover;
   border: solid white 5px;
@@ -277,6 +233,19 @@ h2 {
   overflow: hidden;
   position: absolute;
   width: 100%;
+}
+
+#top-left-image {
+  background-image: url(../images/surface-ZlJmOUFRBfQ-unsplash.jpg);
+  border-radius: 100%;
+}
+
+#top-right-image {
+  background-image: url(../images/sergey-pesterev-llGiAyYthDw-unsplash.jpg);
+}
+
+#bottom-left-image {
+  background-image: url(../images/lee-chinyama-6lGiNbAublo-unsplash.jpg);
 }
 
 #bottom-right {
