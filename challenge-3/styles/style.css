@@ -9,7 +9,7 @@ html {
 @media screen and (min-width: 1001px){
   h1 {
     font-size: 60px;
-    margin-top: 68px;
+    margin-top: 48px;
   }
 
   h2 {
@@ -18,7 +18,7 @@ html {
   }
 
   #overlay-text {
-    margin-top: 34px;
+    margin-top: 27px;
     font-size: 30px;
   }
 
@@ -55,7 +55,7 @@ html {
 @media screen and (max-width: 1000px){
   h1 {
     font-size: 6vw;
-    margin-top: 7%;
+    margin-top: 5%;
   }
 
   h2 {
@@ -64,7 +64,7 @@ html {
   }
 
   #overlay-text {
-    margin-top: 5%;
+    margin-top: 4%;
     font-size: 3vw;
   }
 
@@ -142,10 +142,18 @@ h2 {
   width: 70%;
 }
 
+#close {
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
 #overlay-text {
   color: black;
   font-family: 'Open Sans', 'Roboto', sans-serif;
   font-weight: 800;
+  margin-left: 4.5%;
   text-align: center;
 }
 
@@ -155,8 +163,38 @@ h2 {
   background-size: cover;
   height: 70%;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 3%;
   width: 70%;
+}
+
+#crazy-rich-asians {
+  background-image: url(../images/surface-ZlJmOUFRBfQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70%;
+  margin: auto;
+  margin-top: 3%;
+  width: 30%;
+}
+
+#crippling-depression {
+  background-image: url(../images/lee-chinyama-6lGiNbAublo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70%;
+  margin: auto;
+  margin-top: 4%;
+  width: 30%;
+}
+
+#i-hate-this-picture {
+  background-image: url(../images/simone-hutsch-8LwKILB2ceI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70%;
+  margin: auto;
+  margin-top: 4%;
+  width: 30%;
 }
 
 /* Top Images */
