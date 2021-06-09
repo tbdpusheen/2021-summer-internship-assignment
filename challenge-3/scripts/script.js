@@ -9,7 +9,7 @@ function disableOverlayScrolling() {
   if (document.querySelector('#overlay') != null) {
     setInterval(() => {
       const html = document.querySelector('html');
-      // Enable the scrollbar even without scrolling so as to preserve the width of the page.
+      // Enable the scrollbar even without scrolling so as to preserve the width of the page
       // Only enable the scrollbar if it was supposed to be there already
       if (html.offsetHeight > window.innerHeight) {
         html.style.position = "fixed";
