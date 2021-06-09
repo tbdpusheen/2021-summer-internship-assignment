@@ -152,7 +152,7 @@ h2 {
   color: black;
   font-family: 'Open Sans', 'Roboto', sans-serif;
   font-weight: 800;
-  margin-left: 4.5%;
+  margin-left: 5%;
   text-align: center;
 }
 
@@ -227,11 +227,32 @@ h2 {
   background-position: center;
   background-size: cover;
   border: solid white 5px;
+  cursor: pointer;
   height: 100%;
   margin: auto;
   overflow: hidden;
   position: absolute;
   width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+#top-left-image:hover .overlay,
+#top-right-image:hover .overlay,
+#bottom-left-image:hover .overlay,
+#bottom-right-image:hover .overlay {
+  opacity: .5;
 }
 
 #top-left-image {
@@ -250,6 +271,7 @@ h2 {
 #bottom-right {
   background-color: white;
   clip-path: polygon(50% 35%, 10% 100%, 90% 100%);
+  cursor: pointer;
   height: 0;
   margin-bottom: 15%;
   margin-left: 3%;
